@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8uvnfgk1phdi"]
+
+[ext_resource type="PackedScene" uid="uid://bpn83dmse8560" path="res://Scene/Library/library.tscn" id="1_qg2sp"]
+[ext_resource type="AnimationLibrary" uid="uid://dy67yx5w2wqqs" path="res://Resource/AnimationLibrary/AnimationLibrary_1.res" id="2_x2d11"]
+
+[node name="Library_1" instance=ExtResource("1_qg2sp")]
+animation_library = ExtResource("2_x2d11")

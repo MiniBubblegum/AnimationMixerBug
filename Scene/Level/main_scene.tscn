@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://cqgs4epjh2a0g"]
+
+[ext_resource type="PackedScene" uid="uid://ddkd6cxrv3loa" path="res://Scene/ground.tscn" id="1_dlm0f"]
+[ext_resource type="PackedScene" uid="uid://dj8yw228xria8" path="res://Scene/Player/player.tscn" id="2_bwu8k"]
+[ext_resource type="PackedScene" uid="uid://c8uvnfgk1phdi" path="res://Scene/Library/library_1.tscn" id="3_6ksh8"]
+[ext_resource type="PackedScene" uid="uid://du431uuxpu0lp" path="res://Scene/Library/library_2.tscn" id="4_d7qm0"]
+[ext_resource type="PackedScene" uid="uid://rsitp01h3aa8" path="res://Scene/instructions_text.tscn" id="5_seup4"]
+
+[node name="MainScene" type="Node"]
+
+[node name="Ground" parent="." instance=ExtResource("1_dlm0f")]
+position = Vector2(102, 633)
+
+[node name="Player" parent="Ground" groups=["Player"] instance=ExtResource("2_bwu8k")]
+position = Vector2(441, -430)
+
+[node name="Library_1" parent="Ground" instance=ExtResource("3_6ksh8")]
+position = Vector2(-2, -133)
+
+[node name="Library_2" parent="Ground" instance=ExtResource("4_d7qm0")]
+position = Vector2(898, -133)
+
+[node name="InstructionsText" parent="." instance=ExtResource("5_seup4")]
+offset_right = 362.0
+offset_bottom = 101.0

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://du431uuxpu0lp"]
+
+[ext_resource type="PackedScene" uid="uid://bpn83dmse8560" path="res://Scene/Library/library.tscn" id="1_f1lib"]
+[ext_resource type="AnimationLibrary" uid="uid://bngdvv2ceqax6" path="res://Resource/AnimationLibrary/AnimationLibrary_2.res" id="2_yaaeh"]
+
+[node name="Library_2" instance=ExtResource("1_f1lib")]
+animation_library = ExtResource("2_yaaeh")
+
+[node name="Label" parent="." index="2"]
+text = "Library_2"
